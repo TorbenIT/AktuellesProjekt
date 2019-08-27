@@ -1,0 +1,4 @@
+Bestimmen Sie die Richtung von Frage und Antwort.
+Starten Sie den Test.
+Sie werden nach den Vokabeln so lange gefragt, bis Sie alles richtig gemacht haben.
+Bei einer falschen Antwort wird Ihnen die richtige Antwort genannt.

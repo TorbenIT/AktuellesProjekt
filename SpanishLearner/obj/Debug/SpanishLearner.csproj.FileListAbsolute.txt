@@ -1,0 +1,20 @@
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\bin\Debug\SpanishLearner.exe.config
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\bin\Debug\SpanishLearner.exe
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\bin\Debug\SpanishLearner.pdb
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csprojAssemblyReference.cache
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.Form1.resources
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.Properties.Resources.resources
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csproj.GenerateResource.cache
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csproj.CoreCompileInputs.cache
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.exe
+E:\Informatik\Software\C#\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.pdb
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\bin\Debug\SpanishLearner.exe.config
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\bin\Debug\SpanishLearner.exe
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\bin\Debug\SpanishLearner.pdb
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csprojAssemblyReference.cache
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.Form1.resources
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.Properties.Resources.resources
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csproj.GenerateResource.cache
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csproj.CoreCompileInputs.cache
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.exe
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.pdb

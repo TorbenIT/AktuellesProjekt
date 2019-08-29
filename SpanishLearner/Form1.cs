@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
+using System.Speech.Synthesis;
+
 
 namespace SpanishLearner
 {
@@ -18,10 +20,20 @@ namespace SpanishLearner
 
         private Random r = new Random();
 
+        private SpeechSynthesizer speaker = new SpeechSynthesizer();
+
+
 
         public Form1()
         {
             InitializeComponent();
+
+            foreach (object obj in speaker.GetInstalledVoices())
+            {
+                var voices = (InstalledVoice)obj;
+
+                listBoxVoices.Items.Add(voices.VoiceInfo.Name);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -96,6 +108,9 @@ namespace SpanishLearner
                 textBoxEingabe.Enabled = true;
 
                 ShowNext();
+
+                speaker.SpeakAsync(labelVokabel.Text);
+
             }
             catch (Exception ex)
             {
@@ -115,6 +130,8 @@ namespace SpanishLearner
                 random = r.Next(0, quest.Count);
 
                 labelVokabel.Text = "" + quest[random];
+
+                speaker.SpeakAsync(labelVokabel.Text);
 
                 textBoxEingabe.Text = "";
             }

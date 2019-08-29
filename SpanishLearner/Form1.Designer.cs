@@ -37,6 +37,8 @@
             this.spanischDeutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deutschPortugiesischToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.portugiesischDeutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deutschEnglishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.englishDeutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hilfeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.anleitungToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonStart = new System.Windows.Forms.Button();
@@ -44,8 +46,8 @@
             this.labelVokabel = new System.Windows.Forms.Label();
             this.textBoxEingabe = new System.Windows.Forms.TextBox();
             this.labelAnzeige = new System.Windows.Forms.Label();
-            this.deutschEnglishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.englishDeutschToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listBoxVoices = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -125,6 +127,20 @@
             this.portugiesischDeutschToolStripMenuItem.Text = "Portugiesisch - Deutsch";
             this.portugiesischDeutschToolStripMenuItem.Click += new System.EventHandler(this.portugiesischDeutschToolStripMenuItem_Click_1);
             // 
+            // deutschEnglishToolStripMenuItem
+            // 
+            this.deutschEnglishToolStripMenuItem.Name = "deutschEnglishToolStripMenuItem";
+            this.deutschEnglishToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
+            this.deutschEnglishToolStripMenuItem.Text = "Deutsch - English";
+            this.deutschEnglishToolStripMenuItem.Click += new System.EventHandler(this.deutschEnglishToolStripMenuItem_Click);
+            // 
+            // englishDeutschToolStripMenuItem
+            // 
+            this.englishDeutschToolStripMenuItem.Name = "englishDeutschToolStripMenuItem";
+            this.englishDeutschToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
+            this.englishDeutschToolStripMenuItem.Text = "English - Deutsch";
+            this.englishDeutschToolStripMenuItem.Click += new System.EventHandler(this.englishDeutschToolStripMenuItem_Click);
+            // 
             // hilfeToolStripMenuItem
             // 
             this.hilfeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -136,7 +152,7 @@
             // anleitungToolStripMenuItem
             // 
             this.anleitungToolStripMenuItem.Name = "anleitungToolStripMenuItem";
-            this.anleitungToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.anleitungToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
             this.anleitungToolStripMenuItem.Text = "Anleitung";
             this.anleitungToolStripMenuItem.Click += new System.EventHandler(this.anleitungToolStripMenuItem_Click);
             // 
@@ -186,25 +202,31 @@
             this.labelAnzeige.TabIndex = 5;
             this.labelAnzeige.Text = "spanisch / deutsch ";
             // 
-            // deutschEnglishToolStripMenuItem
+            // listBoxVoices
             // 
-            this.deutschEnglishToolStripMenuItem.Name = "deutschEnglishToolStripMenuItem";
-            this.deutschEnglishToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
-            this.deutschEnglishToolStripMenuItem.Text = "Deutsch - English";
-            this.deutschEnglishToolStripMenuItem.Click += new System.EventHandler(this.deutschEnglishToolStripMenuItem_Click);
+            this.listBoxVoices.FormattingEnabled = true;
+            this.listBoxVoices.Location = new System.Drawing.Point(656, 77);
+            this.listBoxVoices.Name = "listBoxVoices";
+            this.listBoxVoices.Size = new System.Drawing.Size(120, 95);
+            this.listBoxVoices.TabIndex = 6;
             // 
-            // englishDeutschToolStripMenuItem
+            // label1
             // 
-            this.englishDeutschToolStripMenuItem.Name = "englishDeutschToolStripMenuItem";
-            this.englishDeutschToolStripMenuItem.Size = new System.Drawing.Size(261, 22);
-            this.englishDeutschToolStripMenuItem.Text = "English - Deutsch";
-            this.englishDeutschToolStripMenuItem.Click += new System.EventHandler(this.englishDeutschToolStripMenuItem_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(542, 50);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(246, 15);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Installierte Stimmen für die Sprachausgabe:";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.listBoxVoices);
             this.Controls.Add(this.labelAnzeige);
             this.Controls.Add(this.textBoxEingabe);
             this.Controls.Add(this.labelVokabel);
@@ -242,6 +264,8 @@
         private System.Windows.Forms.Label labelAnzeige;
         private System.Windows.Forms.ToolStripMenuItem deutschEnglishToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishDeutschToolStripMenuItem;
+        private System.Windows.Forms.ListBox listBoxVoices;
+        private System.Windows.Forms.Label label1;
     }
 }
 

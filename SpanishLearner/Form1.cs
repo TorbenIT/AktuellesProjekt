@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.IO;
 using System.Speech.Synthesis;
-
+using System.Runtime.InteropServices;
 
 namespace SpanishLearner
 {
@@ -21,6 +21,11 @@ namespace SpanishLearner
         private Random r = new Random();
 
         private SpeechSynthesizer speaker = new SpeechSynthesizer();
+
+        // Voice recording
+        [DllImport("winmm.dll", EntryPoint = "mciSendStringA", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]
+
+        private static extern long MCiString(string command, OleDbConnectionStringBuilder returnString, int returnLength, IntPtr callBack);
 
 
 
@@ -109,6 +114,10 @@ namespace SpanishLearner
 
                 ShowNext();
 
+                MCiString("open new Type waveaudio alias recsound", null, 0, IntPtr.Zero);
+
+                btnRecord.Click += new EventHandler(this.RecordAudio);
+
                 speaker.SpeakAsync(labelVokabel.Text);
 
             }
@@ -117,6 +126,18 @@ namespace SpanishLearner
 
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void RecordAudio(object sender, EventArgs e)
+        {
+            MCiString("record recsound", null, 0, IntPtr.Zero);
+            btnSaveAudio.Click += new EventHandler(this.SaveAudio);
+        }
+
+        private void SaveAudio(object sender, EventArgs e)
+        {
+            MCiString("save recsound E:\\Informatik\\Software\\C#\\Windows Forms\\SpanishLearner\\SpanishLearner\\bin\\Debug\\test.wav", null, 0, IntPtr.Zero);
+            MCiString("close recsound", null, 0, IntPtr.Zero);
         }
 
         private void ShowNext()

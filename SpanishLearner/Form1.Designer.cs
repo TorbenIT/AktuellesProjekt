@@ -48,6 +48,9 @@
             this.labelAnzeige = new System.Windows.Forms.Label();
             this.listBoxVoices = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRecord = new System.Windows.Forms.Button();
+            this.btnPlay = new System.Windows.Forms.Button();
+            this.btnSaveAudio = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -220,11 +223,41 @@
             this.label1.TabIndex = 7;
             this.label1.Text = "Installierte Stimmen für die Sprachausgabe:";
             // 
+            // btnRecord
+            // 
+            this.btnRecord.Location = new System.Drawing.Point(505, 314);
+            this.btnRecord.Name = "btnRecord";
+            this.btnRecord.Size = new System.Drawing.Size(105, 23);
+            this.btnRecord.TabIndex = 8;
+            this.btnRecord.Text = "Sprachaufnahme";
+            this.btnRecord.UseVisualStyleBackColor = true;
+            // 
+            // btnPlay
+            // 
+            this.btnPlay.Location = new System.Drawing.Point(505, 353);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(105, 23);
+            this.btnPlay.TabIndex = 9;
+            this.btnPlay.Text = "Sprachausgabe";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            // 
+            // btnSaveAudio
+            // 
+            this.btnSaveAudio.Location = new System.Drawing.Point(646, 303);
+            this.btnSaveAudio.Name = "btnSaveAudio";
+            this.btnSaveAudio.Size = new System.Drawing.Size(116, 34);
+            this.btnSaveAudio.TabIndex = 10;
+            this.btnSaveAudio.Text = "Aufnahme speichern";
+            this.btnSaveAudio.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnSaveAudio);
+            this.Controls.Add(this.btnPlay);
+            this.Controls.Add(this.btnRecord);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBoxVoices);
             this.Controls.Add(this.labelAnzeige);
@@ -266,6 +299,9 @@
         private System.Windows.Forms.ToolStripMenuItem englishDeutschToolStripMenuItem;
         private System.Windows.Forms.ListBox listBoxVoices;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnRecord;
+        private System.Windows.Forms.Button btnPlay;
+        private System.Windows.Forms.Button btnSaveAudio;
     }
 }
 

@@ -18,3 +18,5 @@ E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\
 E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csproj.CoreCompileInputs.cache
 E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.exe
 E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.pdb
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\bin\Debug\DarrenLee.SpeechSynthesis.dll
+E:\Informatik\Software\C#\Windows Forms\SpanishLearner\SpanishLearner\obj\Debug\SpanishLearner.csproj.CopyComplete
